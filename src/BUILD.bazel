@@ -1,0 +1,16 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@angular//:index.bzl", "ng_module")
+
+ng_module(
+    name = "src",
+    srcs = glob(["**/*.ts"], exclude = ["**/*.spec.ts", "test.ts"]),
+    assets = glob([
+      "assets/**/*.css",
+      "assets/**/*.html",
+    ]),
+    deps = [
+        "@angular//packages/core",
+        "@angular//packages/platform-browser",
+    ],
+)
