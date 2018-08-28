@@ -6,11 +6,29 @@ ng_module(
     name = "src",
     srcs = glob(["**/*.ts"], exclude = ["**/*.spec.ts", "test.ts"]),
     assets = glob([
-      "assets/**/*.css",
-      "assets/**/*.html",
+      "**/*.css",
+      "**/*.html",
     ]),
     deps = [
         "@angular//packages/core",
         "@angular//packages/platform-browser",
     ],
+)
+
+load("@build_bazel_rules_typescript//:defs.bzl", "ts_devserver")
+
+ts_devserver(
+    name = "devserver",
+    additional_root_paths = [
+        "__main__/node_modules/zone.js/dist",
+        "__main__/node_modules/tslib",
+    ],
+    entry_module = "__main__/src/main",
+    serving_path = "/bundle.min.js",
+    static_files = [
+        "//:node_modules/zone.js/dist/zone.min.js",
+        "//:node_modules/tslib/tslib.js",
+        "index.html",
+    ],
+    deps = [":src"],
 )
