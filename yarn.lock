@@ -103,6 +103,14 @@
   dependencies:
     tslib "^1.9.0"
 
+"@angular/bazel@^6.0.3":
+  version "6.1.4"
+  resolved "https://registry.yarnpkg.com/@angular/bazel/-/bazel-6.1.4.tgz#ca287efd57b5658d3b5dee9f50b9fcb13afaeaa7"
+  dependencies:
+    "@bazel/typescript" "^0.15.0"
+    "@types/node" "6.0.84"
+    protobufjs "5.0.0"
+
 "@angular/cli@~6.1.0-rc.0":
   version "6.1.5"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-6.1.5.tgz#312c062631285ff06fd07ecde8afe22cdef5a0e1"
@@ -259,12 +267,24 @@
     lodash "^4.17.5"
     to-fast-properties "^2.0.0"
 
+"@bazel/ibazel@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@bazel/ibazel/-/ibazel-0.5.0.tgz#76f269bd60d866e2aa9e86b25c456d18fee2ef54"
+
 "@bazel/typescript@0.16.1":
   version "0.16.1"
   resolved "https://registry.yarnpkg.com/@bazel/typescript/-/typescript-0.16.1.tgz#5a5d145a17898bfadae8268cf942815424119412"
   dependencies:
     protobufjs "5.0.0"
     tsickle "0.32.1"
+    tsutils "2.20.0"
+
+"@bazel/typescript@^0.15.0":
+  version "0.15.3"
+  resolved "https://registry.yarnpkg.com/@bazel/typescript/-/typescript-0.15.3.tgz#5c32b3bf664b268f9ffb634b86f40004a50e7ef9"
+  dependencies:
+    protobufjs "5.0.0"
+    tsickle "0.25.x"
     tsutils "2.20.0"
 
 "@ngtools/webpack@6.1.5":
@@ -304,6 +324,10 @@
   resolved "https://registry.yarnpkg.com/@types/jasminewd2/-/jasminewd2-2.0.3.tgz#0d2886b0cbdae4c0eeba55e30792f584bf040a95"
   dependencies:
     "@types/jasmine" "*"
+
+"@types/node@6.0.84":
+  version "6.0.84"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.84.tgz#193ffe5a9f42864d425ffd9739d95b753c6a1eab"
 
 "@types/node@^6.0.46":
   version "6.0.116"
@@ -5466,18 +5490,18 @@ source-map-resolve@^0.5.0:
     source-map-url "^0.4.0"
     urix "^0.1.0"
 
+source-map-support@^0.4.2, source-map-support@~0.4.0:
+  version "0.4.18"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.18.tgz#0286a6de8be42641338594e97ccea75f0a2c585f"
+  dependencies:
+    source-map "^0.5.6"
+
 source-map-support@^0.5.0, source-map-support@^0.5.3, source-map-support@^0.5.5:
   version "0.5.9"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.9.tgz#41bc953b2534267ea2d605bccfa7bfa3111ced5f"
   dependencies:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
-
-source-map-support@~0.4.0:
-  version "0.4.18"
-  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.18.tgz#0286a6de8be42641338594e97ccea75f0a2c585f"
-  dependencies:
-    source-map "^0.5.6"
 
 source-map-url@^0.4.0:
   version "0.4.0"
@@ -5907,6 +5931,15 @@ ts-node@~5.0.1:
     mkdirp "^0.5.1"
     source-map-support "^0.5.3"
     yn "^2.0.0"
+
+tsickle@0.25.x:
+  version "0.25.6"
+  resolved "https://registry.yarnpkg.com/tsickle/-/tsickle-0.25.6.tgz#b595db16b236721824eeeda8bb262365b47ef334"
+  dependencies:
+    minimist "^1.2.0"
+    mkdirp "^0.5.1"
+    source-map "^0.5.6"
+    source-map-support "^0.4.2"
 
 tsickle@0.32.1, tsickle@^0.32.1:
   version "0.32.1"
