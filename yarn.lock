@@ -97,15 +97,15 @@
     "@angular-devkit/core" "0.7.5"
     rxjs "^6.0.0"
 
-"@angular/animations@^6.0.3":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-6.1.4.tgz#ca17acd62b9328404671a569fbf3065472527174"
+"@angular/animations@^6.1.7":
+  version "6.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-6.1.7.tgz#5d1ca6a2f2e5827ac751c88265b7916d17a732d0"
   dependencies:
     tslib "^1.9.0"
 
-"@angular/bazel@^6.0.3":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@angular/bazel/-/bazel-6.1.4.tgz#ca287efd57b5658d3b5dee9f50b9fcb13afaeaa7"
+"@angular/bazel@^6.1.7":
+  version "6.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/bazel/-/bazel-6.1.7.tgz#524ac60e5005f921c3615533d7872cf18ad16d76"
   dependencies:
     "@bazel/typescript" "^0.15.0"
     "@types/node" "6.0.84"
@@ -126,64 +126,64 @@
     symbol-observable "^1.2.0"
     yargs-parser "^10.0.0"
 
-"@angular/common@^6.0.3":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@angular/common/-/common-6.1.4.tgz#825de5b1fb98db5a1d3d2253ad7181bb25477551"
+"@angular/common@^6.1.7":
+  version "6.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/common/-/common-6.1.7.tgz#b94ae9f1c71b1223a305942f09aabf818f5ed2e9"
   dependencies:
     tslib "^1.9.0"
 
-"@angular/compiler-cli@^6.0.3":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-6.1.4.tgz#65f4c4382bb180d22905db57e28a4ca728b7bf8c"
+"@angular/compiler-cli@^6.1.7":
+  version "6.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-6.1.7.tgz#60abdfb3cac6f50d41b2af905a5bfa2bf1f08b36"
   dependencies:
     chokidar "^1.4.2"
     minimist "^1.2.0"
     reflect-metadata "^0.1.2"
     tsickle "^0.32.1"
 
-"@angular/compiler@^6.0.3":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-6.1.4.tgz#479e792ce012dc8481f1d87b919fcddb11c8eee0"
+"@angular/compiler@^6.1.7":
+  version "6.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-6.1.7.tgz#cf4e40ec505130710122229481a90ca106bad855"
   dependencies:
     tslib "^1.9.0"
 
-"@angular/core@^6.0.3":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-6.1.4.tgz#2602ecc031bbb4ad968a7db78786017e92d19b98"
+"@angular/core@^6.1.7":
+  version "6.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-6.1.7.tgz#036088227cbff7d3fc7af0c43c5af9db46149f16"
   dependencies:
     tslib "^1.9.0"
 
-"@angular/forms@^6.0.3":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-6.1.4.tgz#d0b83f9cd4cb35f58ee67766d17aae0cbd7de561"
+"@angular/forms@^6.1.7":
+  version "6.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-6.1.7.tgz#42484c2ab1079fd34ddd637eb143db6a17be4990"
   dependencies:
     tslib "^1.9.0"
 
-"@angular/http@^6.0.3":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@angular/http/-/http-6.1.4.tgz#0ab24a51075daaba60a4241200c44dcfcd87da5e"
+"@angular/http@^6.1.7":
+  version "6.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/http/-/http-6.1.7.tgz#21fbfaa1bd40b157c3df12a058678823b97df5ee"
   dependencies:
     tslib "^1.9.0"
 
-"@angular/language-service@^6.0.3":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-6.1.4.tgz#946a70e1afbf83dbae4c31b64784a5a77ae07e53"
+"@angular/language-service@^6.1.7":
+  version "6.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-6.1.7.tgz#f25335c32a7617344cf92736753a434c46678ebb"
 
-"@angular/platform-browser-dynamic@^6.0.3":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-6.1.4.tgz#1af3549decadfb8e73513d917eaa5479184c39ea"
+"@angular/platform-browser-dynamic@^6.1.7":
+  version "6.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-6.1.7.tgz#44381fc4ed990194b372553e6a99f4cc80852414"
   dependencies:
     tslib "^1.9.0"
 
-"@angular/platform-browser@^6.0.3":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-6.1.4.tgz#a5763f549f2073ba30b9d8baf8512c8076e8d58b"
+"@angular/platform-browser@^6.1.7":
+  version "6.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-6.1.7.tgz#21da4fbe6f407320ee50cdf9ab0b69b2e10eca50"
   dependencies:
     tslib "^1.9.0"
 
-"@angular/router@^6.0.3":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@angular/router/-/router-6.1.4.tgz#ec6d7400baea46386e3bbcf3e3acb0135f368fac"
+"@angular/router@^6.1.7":
+  version "6.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/router/-/router-6.1.7.tgz#90294b2497649fd6d6d1507e6e447d9c153e8db8"
   dependencies:
     tslib "^1.9.0"
 
@@ -271,12 +271,11 @@
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@bazel/ibazel/-/ibazel-0.5.0.tgz#76f269bd60d866e2aa9e86b25c456d18fee2ef54"
 
-"@bazel/typescript@0.16.1":
-  version "0.16.1"
-  resolved "https://registry.yarnpkg.com/@bazel/typescript/-/typescript-0.16.1.tgz#5a5d145a17898bfadae8268cf942815424119412"
+"@bazel/typescript@0.16.2":
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/@bazel/typescript/-/typescript-0.16.2.tgz#42474e029b0c6fa42a058fc86e2f593b7a367d56"
   dependencies:
     protobufjs "5.0.0"
-    tsickle "0.32.1"
     tsutils "2.20.0"
 
 "@bazel/typescript@^0.15.0":
@@ -5941,7 +5940,7 @@ tsickle@0.25.x:
     source-map "^0.5.6"
     source-map-support "^0.4.2"
 
-tsickle@0.32.1, tsickle@^0.32.1:
+tsickle@^0.32.1:
   version "0.32.1"
   resolved "https://registry.yarnpkg.com/tsickle/-/tsickle-0.32.1.tgz#f16e94ba80b32fc9ebe320dc94fbc2ca7f3521a5"
   dependencies:

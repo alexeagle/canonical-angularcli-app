@@ -9,15 +9,24 @@ ts_library(
 )
 
 protractor_web_test_suite(
+    name = "prodserver_test",
+    data = ["@angular//packages/bazel/src/protractor/utils"],
+    on_prepare = ":protractor.on-prepare.js",
+    server = "//src:prodserver",
+    deps = [":e2e_lib"],
+)
+
+protractor_web_test_suite(
     name = "devserver_test",
     data = ["@angular//packages/bazel/src/protractor/utils"],
     on_prepare = ":protractor.on-prepare.js",
     server = "//src:devserver",
     deps = [":e2e_lib"],
-    # Broken until https://github.com/angular/angular/pull/25701 is released
-    tags = ["manual"],
 )
 
+# Default target in this package is to run the e2e tests on the devserver.
+# This is a faster round-trip but doesn't exercise production optimizations like
+# code-splitting and lazy loading.
 alias(
     name = "e2e",
     actual = "devserver_test",
