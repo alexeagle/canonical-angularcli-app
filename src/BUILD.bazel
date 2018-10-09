@@ -15,13 +15,14 @@ ng_module(
     deps = [
         "@angular//packages/core",
         "@angular//packages/platform-browser",
+        "@npm//@types",
     ],
 )
 # Needed because the prodserver only loads static files that appear under this
 # package.
 genrule(
     name = "zonejs",
-    srcs = ["//:node_modules/zone.js/dist/zone.min.js"],
+    srcs = ["@npm//node_modules/zone.js:dist/zone.min.js"],
     outs = ["zone.min.js"],
     cmd = "cp $< $@",
 )
@@ -39,14 +40,14 @@ ts_devserver(
     name = "devserver",
     port = 4200,
     additional_root_paths = [
-        "__main__/node_modules/zone.js/dist",
-        "__main__/node_modules/tslib",
+        "npm/node_modules/zone.js/dist",
+        "npm/node_modules/tslib",
     ],
     entry_module = "__main__/src/main",
     serving_path = "/bundle.min.js",
     static_files = [
-        "//:node_modules/zone.js/dist/zone.min.js",
-        "//:node_modules/tslib/tslib.js",
+        "@npm//node_modules/zone.js:dist/zone.min.js",
+        "@npm//node_modules/tslib:tslib.js",
         "index.html",
     ],
     deps = [":src"],
@@ -60,23 +61,27 @@ ts_library(
         ":src",
         "@angular//packages/core/testing",
         "@angular//packages/platform-browser-dynamic/testing",
+        "@npm//@types",
     ],
 )
 
 ts_web_test_suite(
     name = "test",
-    srcs = ["//:node_modules/tslib/tslib.js"],
+    srcs = ["@npm//node_modules/tslib:tslib.js"],
     # do not sort
     bootstrap = [
-        "//:node_modules/zone.js/dist/zone-testing-bundle.js",
-        "//:node_modules/reflect-metadata/Reflect.js",
+        "@npm//node_modules/zone.js:dist/zone-testing-bundle.js",
+        "@npm//node_modules/reflect-metadata:Reflect.js",
     ],
     browsers = [
         "@io_bazel_rules_webtesting//browsers:chromium-local",
-        "@io_bazel_rules_webtesting//browsers:firefox-local",
+        # TODO(gregmagolan): re-enable firefox testing once fixed
+        # See https://github.com/bazelbuild/rules_typescript/issues/296
+        # "@io_bazel_rules_webtesting//browsers:firefox-local",
     ],
     deps = [
         ":test_lib",
+        "@npm//karma-jasmine",
     ],
 )
 
